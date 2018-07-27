@@ -6,7 +6,9 @@ RUN . restart_env && yum install -y fftw3-devel doxygen
 
 ##
 # env sphinx
-RUN . /usr/bin/pygdal_env && pip install sphinx 
+RUN . /usr/bin/pygdal_env && pip install sphinx
+
+RUN . /usr/bin/pygdal_env && pip install sphinx_rtd_theme
 
 RUN . /usr/bin/pygdal_env && pip install pillow
 
