@@ -24,9 +24,9 @@ RUN . restart_env && wget http://mirror.ctan.org/systems/texlive/tlnet/install-t
 	tar -xvf install-tl-unx.tar.gz -C /install-tl-unx --strip-components=1; \
     echo "selected_scheme scheme-basic" >> /install-tl-unx/texlive.profile; \
     echo "TEXDIR /usr/local/texlive/current/" >> /install-tl-unx/texlive.profile; \
-	/install-tl-unx/install-tl -profile /install-tl-unx/texlive.profile;
-#    rm -r /install-tl-unx; \
-#    rm install-tl-unx.tar.gz
+	/install-tl-unx/install-tl -profile /install-tl-unx/texlive.profile; \
+    rm -r /install-tl-unx; \
+    rm install-tl-unx.tar.gz
 
 ENV PATH=/usr/local/texlive/current/bin/x86_64-linux:${PATH}
 
