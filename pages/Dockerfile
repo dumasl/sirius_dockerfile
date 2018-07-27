@@ -1,10 +1,6 @@
 FROM ldumas/python_gdal_dockerfile:py_gdal
 
 ##
-# install FFTW & doxygen
-RUN . restart_env && yum install -y fftw3-devel doxygen
-
-##
 # env sphinx
 RUN . /usr/bin/pygdal_env && pip install sphinx
 
@@ -17,7 +13,7 @@ RUN . /usr/bin/pygdal_env && pip install sphinx-autoapi
 RUN . /usr/bin/pygdal_env && pip install ipython
 
 ##
-# env latex
+# env latex for sphinx
 
 RUN . restart_env && yum install -y fontconfig freetype freetype-devel fontconfig-devel perl-Digest-MD5 dvipng
 
