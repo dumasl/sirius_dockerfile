@@ -1,4 +1,4 @@
-FROM py_gdal
+FROM ldumas/python_gdal_dockerfile:py_gdal
 
 ##
 # install FFTW & doxygen
