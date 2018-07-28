@@ -28,5 +28,8 @@ RUN . restart_env && wget http://mirror.ctan.org/systems/texlive/tlnet/install-t
 
 ENV PATH=/usr/local/texlive/current/bin/x86_64-linux:${PATH}
 
-RUN tlmgr install latexmk && tlmgr install ucs && tlmgr install algorithms && tlmgr install anyfontsize
+RUN tlmgr install latexmk 
+RUN tlmgr install ucs 
+RUN tlmgr install algorithms 
+RUN tlmgr install anyfontsize
 
