@@ -12,6 +12,8 @@ RUN . /usr/bin/pygdal_env && pip install sphinx-autoapi
 
 RUN . /usr/bin/pygdal_env && pip install ipython
 
+RUN . /usr/bin/pygdal_env && pip install exhale
+
 ##
 # env latex for sphinx
 
