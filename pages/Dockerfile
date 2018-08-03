@@ -14,6 +14,8 @@ RUN . /usr/bin/pygdal_env && pip install ipython
 
 RUN . /usr/bin/pygdal_env && pip install exhale
 
+RUN . /usr/bin/pygdal_env && pip install m2r
+
 ##
 # env latex for sphinx
 
